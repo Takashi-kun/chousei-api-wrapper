@@ -4,7 +4,7 @@
 VAGRANTFILE_API_VERSION = '2'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-    config.vm.box = 'chousei-api-wrapper-local'
+    config.vm.box = 'gcp-base'
 
     ## define basic info
     config.vm.define 'chousei_api_wrapper_local' do |d|
