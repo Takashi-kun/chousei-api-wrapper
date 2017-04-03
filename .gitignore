@@ -1,0 +1,13 @@
+.vagrant
+.DS_Store
+## exclude large files
+*.box
+*.zip
+*.tar
+*.gz
+## exclude pycache
+*.pyc
+## exclude password file
+config.py
+## exclude vendors
+lib

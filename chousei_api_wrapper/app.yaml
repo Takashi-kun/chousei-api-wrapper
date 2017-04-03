@@ -1,0 +1,18 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: main.app
+
+libraries:
+- name: MySQLdb
+  version: "latest"
+
+env_variables:
+  GAE_INSTANCE: 1
+
+skip_files:
+  - ^(.*/)?.*\.py[co]$
+  - \.gitignore
